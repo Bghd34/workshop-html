@@ -18,30 +18,35 @@
         <h1>Contact</h1>
         
         <form>
-            <p>
-                <label>Nom</label> : <input type="text" name="Nom" minlength="4" required />
-            </p>
-            <p>
-                <label>Prenom</label> : <input type="text" name="Prenom" minlength="4" required />
-            </p>
-            <p>
-                <label>Email</label> : <input type="email" name="Email" minlength="4" required />
-            </p>
-            <p>
-                <label>Tel</label> : <input type="tel" name="Tel" required />
-            </p>
+            <div>
+                <label for="nom">Nom</label> : <input type="text" name="Nom" id="nom" minlength="4" required />
+            </div>
 
-            <label for="contact">contact préféré</label>
+            <div>
+                <label for="prenom">Prenom</label> : <input type="text" name="Prenom" id="prenom" minlength="4" required />
+            </div>
 
-            <select id="contact">
-                <option value="num">num</option>
-                <option value="email">email</option>
-            </select>
+            <div>
+                <label for="email">Email</label> : <input type="email" name="Email" id="email" minlength="4" required />
+            </div>
 
-            <p>
+            <div>
+                <label for="num">Tel</label> : <input type="tel" name="Tel" id="num" required />
+            </div>
+            <div>
+                <label for="contact">contact préféré</label>
+                <select id="contact">
+                    <option value="num">num</option>
+                    <option value="email">email</option>
+                </select>
+            </div>
+
+
+            <div>
                 <label for="msg">Message</label><br />
                 <textarea name="msg" id="msg" maxlength="200"></textarea>
-            </p>
+            </div>
+
             <input type="submit" value="Envoyer le formulaire">
         </form>
 
